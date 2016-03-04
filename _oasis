@@ -1,0 +1,17 @@
+OASISFormat: 0.4
+OCamlVersion: >= 4.01
+Name:        candy
+Version:     0.1
+Synopsis:    A web UI for Cotton
+Authors:     Enguerrand Decorne
+License:     MIT
+AlphaFeatures: ocamlbuild_more_args
+XOcamlbuildPluginTags: package(js_of_ocaml.ocamlbuild)
+
+Executable candy
+  Install: false
+  CompiledObject: byte
+  Path:       src
+  BuildTools: ocamlbuild
+  BuildDepends: lwt, tyxml, js_of_ocaml.tyxml,js_of_ocaml.tyxml, reactiveData, cohttp.js
+  MainIs:     main.ml

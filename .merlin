@@ -1,0 +1,7 @@
+S src
+PKG lwt
+PKG react
+PKG js_of_ocaml
+PKG reactiveData
+PKG tyxml
+PKG cohttp.js
